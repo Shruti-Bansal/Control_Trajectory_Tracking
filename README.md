@@ -17,14 +17,15 @@ The error between the actual steer and the desired steer was calculated and the 
 kp = 0.35, ki = 0.0012, kd = 0.9 and output limited to [-1.2, 1.2]
 
 The car gave a decent performance in CARLA, here are some snaphots:
-![Image2](https://github.com/Shruti-Bansal/Control_Trajectory_Tracking/blob/main/images/img2_pr4.png)
-![Image3](https://github.com/Shruti-Bansal/Control_Trajectory_Tracking/blob/main/images/img3_pr4.png)
-![Image4](https://github.com/Shruti-Bansal/Control_Trajectory_Tracking/blob/main/images/img4_pr4.png)
+<img src="https://github.com/Shruti-Bansal/Control_Trajectory_Tracking/blob/main/images/img2_pr4.png">
+<img src="https://github.com/Shruti-Bansal/Control_Trajectory_Tracking/blob/main/images/img3_pr4.png">
+<img src="https://github.com/Shruti-Bansal/Control_Trajectory_Tracking/blob/main/images/img4_pr4.png">
 
-## Performance Plots
-Evaluate the PID efficiency
-![Image5](https://github.com/Shruti-Bansal/Control_Trajectory_Tracking/blob/main/images/plot1_proj_v2.png)
-![Image6](https://github.com/Shruti-Bansal/Control_Trajectory_Tracking/blob/main/images/plot2_project_v2.png)
+## Performance Plots: Evaluate the PID efficiency
+
+<img src="https://github.com/Shruti-Bansal/Control_Trajectory_Tracking/blob/main/images/plot1_proj_v2.png" width=75% height=75%>
+
+<img src ="https://github.com/Shruti-Bansal/Control_Trajectory_Tracking/blob/main/images/plot2_project_v2.png" width=75% height=75%>
 
 We see that the car oscillates a fair amount in its movement. Increase in the kp values increases the oscillations further, however, increasing the kd value controls the oscillations and ki helps bring the car back to the center of the lane more quickly. However, if ki is increased further, the car is unable to avoid obstacles efficiently and crashes.
 If the kp value is decreased, the car crashes with the first obstacle and is unable to respond properly. The graphs indicate that the car steers much more than it should based on the steering angle calculations and the error is higher for a high steer angle.
